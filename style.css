@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 header{
-    /* background: rgb(181, 146, 57); */
+   
     display: flex;
     justify-content: space-between;
     padding: 20px 100px;
@@ -14,10 +17,10 @@ header{
     align-items: center;
     top: 0px;
 }
-.logo{
-font-size: 1.1em;
-color: #f9c85edf;
-user-select: none;
+.navbar{
+    position: absolute;
+    right: 35px;
+    top: 30px;
 }
 nav a{
     position: relative;
@@ -86,11 +89,6 @@ body{
 
 }
 
-.wrapper .form-box.login
-{
-    /* display: none; */
-}
-
 .wrapper.active .form-box.login{
     transition: none;
     transform: translate(-450px);
@@ -133,7 +131,6 @@ transform: translate(450px);
     font-size: 1.2em;
     transform: translate(-50%);
     color: rgb(221, 227, 229);
-    /* pointer-events: none; */
     font-weight: 500;
     transition: .5s;
     
@@ -145,7 +142,6 @@ transform: translate(450px);
     font-size: 1.2em;
     transform: translate(-50%);
     color: rgb(222, 231, 228);
-    /* pointer-events: none; */
     font-weight: 500;
     transition: .5s;
     
